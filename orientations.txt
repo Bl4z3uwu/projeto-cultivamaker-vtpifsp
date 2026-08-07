@@ -1,4 +1,4 @@
-Dashboard Horta: Sua orta tem pepino?
+Dashboard Horta: "Sua orta tem pepino?"
 
 - Selecionar planta em cada ponto
 - Cada planta tem alcance de altura, iluminação, temperatura e irrigação
