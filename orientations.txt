@@ -1,0 +1,5 @@
+Dashboard Horta: Sua orta tem pepino?
+
+- Selecionar planta em cada ponto
+- Cada planta tem alcance de altura, iluminação, temperatura e irrigação
+- Dados do sistema: Umidade do ambiente, temperatura do ambiente, umidade do solo em cada ponto, iluminação do ambiente, chuva true ou false
