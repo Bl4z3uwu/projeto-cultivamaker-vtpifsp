@@ -19,13 +19,13 @@ const int valorMolhado = 1500;
 // Variáveis de Controle da Bomba
 int umidadeMinima = 30; // Liga a bomba se cair abaixo disso
 int umidadeMaxima = 40; // Só desliga quando atingir isso
-bool regandoAutomatico = false; // Memória do estado da bomba
+bool regandoAutomatico = false;
 
 // Controle Manual Anti-Spam
 bool regaManualAtiva = false;
 unsigned long tempoFimRegaManual = 0;
-unsigned long tempoUltimoAcionamento = 0; // Grava quando o botão foi apertado
-const unsigned long COOLDOWN = 15000;     // 15 segundos de bloqueio (15000 ms)
+unsigned long tempoUltimoAcionamento = 0;
+const unsigned long COOLDOWN = 15000;     // 15 segundos de bloqueio
 
 /* ----- Criação de objetos ----- */
 DHT dht(DHTPIN, DHT_TYPE);
@@ -52,7 +52,7 @@ void setup() {
     pinMode(chuvaPin, INPUT);
     pinMode(luzPin, INPUT);
 
-    // Configuração da Bomba (Inicia desligada - Lógica Invertida do Relé)
+    // Configuração da Bomba
     pinMode(bombaPin, OUTPUT);
     digitalWrite(bombaPin, HIGH); 
 
